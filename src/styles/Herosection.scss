@@ -1,0 +1,58 @@
+@import './Variable.scss';
+@import './Mixins.scss';
+
+section{
+    @media (max-width:1180px){
+     
+        margin: auto;
+              
+        }
+.btn{
+    @include button($btn-primary-bg,white);
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.btn1{
+   background-color: transparent;
+   border: none;
+  cursor: pointer;
+
+}
+.heroFont{
+    font-size: xx-large;
+    line-height: 45px;
+}
+.herotext{
+    font-size: large;
+    max-width: 100%;
+    line-height: 35px;
+    max-width: 600px
+
+}
+    .sectionStart{
+        @include Grid(13fr 7fr);
+        @media (max-width:480px){
+        @include Grid(1fr);
+              
+        };
+        @media (max-width:768px){
+            @include Grid(1fr);
+                  
+            };
+            @media (max-width:1180px){
+                @include Grid(1fr);
+                 
+                      
+                }  
+        gap: 20px;
+    
+
+    }
+
+.heroImage{
+    width: 350px;
+    height: 350px;
+    background-color: antiquewhite;
+}
+}
+

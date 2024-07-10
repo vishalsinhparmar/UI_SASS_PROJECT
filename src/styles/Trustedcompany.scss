@@ -1,0 +1,52 @@
+ @import './Mixins.scss';
+ 
+ 
+ div {
+
+    .align{
+    text-align: center;
+    margin-top: 40px
+}
+ .myLogo{
+    @include Grid((repeat(4,1fr)));
+    margin-top: 20px;
+    @media  (max-width:768px) {
+    @include Grid((repeat(2,1fr)));
+    gap: 4px;
+    margin: auto;
+    }
+  
+    
+
+ }
+ .logo{
+   // @include Grid((repeat(5,1fr)));
+   @include flex-center();
+   align-self: center;
+    width: 180px;
+   
+
+    @media  (max-width:768px) {
+      height: auto;
+      width: 150px;  
+      margin: auto;       
+      }
+      @media  (max-width:480px) {
+         height: auto;
+         width: 130px;  
+         gap:4px       
+         }
+      
+
+   //  background-color: aquamarine;
+ };
+ .google{
+   height: 100px;
+   width: 100px;
+   @media  (max-width:768px) {
+      height: 80px;
+      width: 80px;
+         
+      }
+ }
+ }

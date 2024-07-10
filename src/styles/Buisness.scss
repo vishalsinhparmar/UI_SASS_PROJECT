@@ -1,0 +1,83 @@
+@import './Variable.scss';
+@import './Mixins.scss';
+
+.buisness{
+   text-align: center;
+   max-width: 800px;
+   margin: auto;
+   margin-top: 90px;
+
+   .pay-detail{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+
+         span{
+            margin: 10px;
+        
+         }
+    
+
+   }
+ 
+
+}
+.payment-card{
+    @include Grid((repeat(3,1fr))); 
+    padding: 20px;
+    gap: 30px;
+
+    @media (max-width:768px) {
+    @include Grid((repeat(1,1fr))); 
+      
+    }
+
+     .card-detail{
+        // background-color:$btn-primary-bg;
+        padding: 20px;
+        border: 1px solid blue;
+        // box shadow
+        box-shadow: 7px 8px 8px black; 
+        .md-card{
+               text-align: center;
+               .doller{
+                width: px;
+               };
+               .imstack{
+                background-color: aqua;
+                padding: 7px;
+                border-radius: 100%;
+                font-size: 15px;
+               }
+               p{
+                font-size: small;
+               };
+              
+        }
+        .features{
+            padding: 10px 10px;
+            p{
+              margin: 0 ;
+              display: flex;
+              align-items: center;
+            }
+            .checkmark{
+                font-size: 20px;
+                margin-right: 10px;
+                background-color: aqua;
+                border-radius: 100%;
+                padding: 4px;
+            }
+            .btn{
+                @include button($btn-primary-bg,white);
+                width: 100%;
+                background-color: black;
+                border-radius: 8px;
+                margin-top: 30px;
+                padding: 15px;
+            }
+          }
+
+     }
+  
+  }

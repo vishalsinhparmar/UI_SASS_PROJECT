@@ -1,0 +1,43 @@
+@import './Variable.scss';
+@import './Mixins.scss';
+
+.about{
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+    margin-top: 50px;
+    h1{
+        line-height: 45px;
+
+    }
+    p{
+        line-height: 30px;
+    }
+   
+
+}
+.Accordian{
+    padding: 40px;
+
+    .Accordian_detail {
+        border-radius: 5px;
+        border: 1px solid blue;
+        padding: 15px;
+        margin-top: 20px;
+    
+
+         h3{
+            padding: 5px;
+         }
+         span{
+                  float: inline-end;
+                  padding-right: 20px;
+                  font-size: 25px;
+                  vertical-align: baseline;
+                  cursor: pointer;
+                  color: $btn-primary-bg;
+            //   align-items: self-end;
+         }
+
+    }
+}

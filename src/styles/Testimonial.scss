@@ -1,0 +1,54 @@
+@import './Variable.scss';
+   
+.Testimonial{
+    @include Grid(13fr 7fr);
+    padding: 50px;
+    // display: grid;
+    // grid-template-columns: auto auto;
+    margin-top: 100px;
+    background-color:$primary-color;
+    color: white;
+   
+
+    h1{
+        font-weight: 300;
+        font-size: 40px;
+        line-height: 45px;
+    }*
+    p{
+        line-height: 25px; 
+        margin-bottom: 20px;
+        
+    }
+    h3{
+        padding: 18px 0 0px 0;  
+    }
+    
+     hr{
+        width: 80px;
+        float: left;
+        border-color: white;
+        margin-right: 10px;
+     };
+
+    
+      img{
+          width: 300px;
+          height: 300px;
+        //   background-color: aqua;
+       
+       
+     }
+    }
+
+
+    @media (max-width:768px) {
+        .Testimonial{
+        @include Grid(1fr);
+     padding: 40px 30px;
+
+        // margin: auto;
+
+        } 
+
+         }

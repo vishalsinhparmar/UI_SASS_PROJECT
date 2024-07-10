@@ -1,0 +1,74 @@
+@import './Variable.scss';
+@import './Mixins.scss';
+
+.feature{
+    // background-color: aquamarine;
+    @include Grid(repeat(2,1fr));
+    margin-top: 100px;
+    gap: 40px;
+}
+.iteam{
+    margin-top: 25px;
+    h1{
+        line-height: 55px;  
+        font-size: 40px; 
+    }
+    p{
+        line-height: 30px;
+        margin-top: 25px
+    }
+    button{
+        @include button($btn-primary-bg,white);
+        margin-top: 20px;
+    }
+}
+.lg-content{
+    background-color:lightblue;
+    padding: 35px;
+    position: relative;
+
+    .sm_card{
+        border-radius: 5px;
+        background-color: white;
+
+        margin-top: 20px;
+        padding: 15px;
+        box-shadow: 2px 2px 5px black;
+        position: relative;
+        animation: example 5s linear 2s infinite alternate;
+      
+       
+       
+    }
+    @keyframes example  {
+            
+    }
+    .sm_card:hover {
+        @extend .sm_card;
+         transform: translateX(40px);
+        transition: ease-in-out 0.5s 
+
+
+
+    }
+     img{
+        width: 100px;
+        height: auto;
+        float:left;
+        margin-right: 20px; 
+     }
+};
+
+
+@media (max-width:768px) {
+    .feature{
+    @include Grid(repeat(1,1fr));
+    img{
+        float: none;
+        display: flex;
+        justify-content: center;
+    }
+    }
+}
+
+

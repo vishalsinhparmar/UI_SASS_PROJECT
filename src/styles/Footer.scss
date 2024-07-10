@@ -1,0 +1,84 @@
+@import './Variable.scss';
+@import './Mixins.scss';
+
+.content{
+    background-color: lightblue;
+    .footer-head{
+       @include flex-center;
+       padding: 30px 0;
+       .btn{
+        @include button($btn-primary-bg,white);
+         background-color: black;
+         color: white;
+        
+       }
+       hr{
+        // color: blue;
+        background-color: aqua;
+        color: antiquewhite
+       }
+
+       @media (max-width:480px) {
+        display: block;
+
+        .btn{
+            margin-top: 20px
+        }
+       }
+    };
+    .Footer-content{
+       @include flex-center;
+
+       @media (max-width:480px) {
+       
+        display: block;
+        
+       };
+     
+
+
+       .footer-tohead{
+           h1{
+            padding: 5px 0;
+           }
+           p{
+            line-height: 25px;
+            margin-bottom: 20px;
+           }
+           span{
+            margin-right:30px;
+           }
+       }
+       .Footer-sec-main{
+        max-width: 350px;
+             
+       }
+       .Footer-section{
+        max-width: 350px;
+        padding: 10px;
+        @media (max-width:480px) {
+              padding: 0px;
+              max-width: 100%;
+
+              .none{
+                display: none;
+              }
+              li{
+                //   @include Grid(repeat());
+            
+                
+
+                 
+               
+              }
+            
+           };
+       }
+       ul,li{
+        list-style-type: none;
+        padding: 6px;
+        font-weight: 600;
+       }
+
+    }
+}
