@@ -3,8 +3,11 @@
 
 
 .containerMain{
-    @include flex-center;
-    border-radius: 5px;
+    display: flex ;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-around;
     
     ul{
         display: flex;
